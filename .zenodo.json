@@ -1,0 +1,21 @@
+{
+    "upload_type": "software",
+    "title": "Flowsmith: Gating and analysis of flow cytometry data",
+    "description": "Gating and analysis of flow cytometry data. Research software supporting the frequency-modulated optogenetic decoder study. See the repository README for usage.",
+    "creators": [
+        {
+            "name": "Ho, Phuong",
+            "orcid": "0000-0001-7375-0644",
+            "affiliation": "Shu Chien-Gene Lay Department of Bioengineering, University of California, San Diego, La Jolla, CA, USA"
+        }
+    ],
+    "keywords": [
+        "flow cytometry",
+        "gating",
+        "singlet gating",
+        "immunophenotyping",
+        "data analysis"
+    ],
+    "license": "mit",
+    "access_right": "open"
+}

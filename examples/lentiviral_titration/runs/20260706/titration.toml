@@ -1,0 +1,35 @@
+# Lentiviral titration — 3 constructs (AA21/AA22/AA23), GFP reporter on BL1-A.
+# Untransduced 293T sets the GFP+ threshold. Each construct is a separate virus
+# prep titrated across 0.5 / 1.0 / 2.0 / 4.0 uL. Per-construct titers are computed
+# by titer_by_construct.py (the titer analysis here averages over all wells, so it
+# is not used for multi-construct data).
+
+sheet = "samples.csv"
+data  = "../../data/20260706"
+out   = "results"
+
+channels = ["BL1-A"]     # GFP reporter
+control  = "untransduced"
+dose     = "virus_uL"
+group    = "construct"
+
+[channel_labels]
+"BL1-A" = "GFP"
+
+# Per-well MFI + % positive table -> results/fluor_stats.csv
+[[analysis]]
+kind = "mfi_pct"
+
+# GFP ridgelines, one panel per construct, one ridge per virus volume.
+[[analysis]]
+kind = "histograms"
+group = "virus_uL"
+group_label = "Virus (uL)"
+
+# % GFP+ (and MFI) vs virus volume, one series per construct.
+[[analysis]]
+kind = "dose_response"
+dose = "virus_uL"
+dose_label = "Virus volume (uL)"
+group = "construct"
+group_label = "Construct"

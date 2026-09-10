@@ -144,7 +144,7 @@ def _mfi_pct(ctx, channels=None, control=None, positive_percentile=None, out="fl
 @register("histograms")
 def _histograms(ctx, channels=None, group=None, group_label=None, colors=None,
                 replicate_mode="representative", control=None,
-                positive_percentile=None, per_sample=None):
+                positive_percentile=None, per_sample=None, order=None):
     """One logicle ridgeline PNG per channel, one ridge per condition value.
 
     ``group`` is the condition column to split on (auto-detected if omitted);
@@ -152,6 +152,8 @@ def _histograms(ctx, channels=None, group=None, group_label=None, colors=None,
     Colours auto-pick by data type (numeric -> sequential ramp, string ->
     categorical palette); ``colors`` overrides with an explicit list.
     ``replicate_mode`` is "representative" (one replicate per ridge) or "pool".
+    ``order`` lists the group values top-to-bottom, overriding the default sort
+    (e.g. to put a WT reference on the top ridge).
     """
     channels = channels or ctx.channels
     group = group if group is not None else ctx.group_col
@@ -172,6 +174,7 @@ def _histograms(ctx, channels=None, group=None, group_label=None, colors=None,
                 group_label=group_label, channel_label=ctx.label_for(ch),
                 colors=colors, per_sample=per_sample,
                 threshold=thresholds.get(ch), replicate_mode=replicate_mode,
+                order=order,
             )
             path = ctx.out_dir / f"hist_{_safe(ch)}.png"
             fig.savefig(path)

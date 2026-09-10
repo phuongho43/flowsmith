@@ -310,6 +310,7 @@ def plot_histograms(
     overlap: float = 1.7,
     smooth: float = 1.5,
     replicate_mode: str = "representative",
+    order=None,
     seed: int = 0,
 ) -> plt.Axes:
     """Ridgeline of ``channel`` over a biexponential logicle x-axis.
@@ -320,8 +321,10 @@ def plot_histograms(
     ``"representative"`` (default) uses the representative replicate, ``"pool"``
     concatenates them. Each ridge's tick is its bare condition value (number or
     string); ``group_label`` names the y-axis (e.g. ``"Dose (mM)"``, defaulting
-    to ``group_col``). When ``threshold`` is given, the positive gate is drawn
-    and each ridge is annotated with its % positive. Expects the ``rc()`` context.
+    to ``group_col``). ``order`` lists the group values top-to-bottom, overriding
+    the default sort (e.g. to put a WT reference on top). When ``threshold`` is
+    given, the positive gate is drawn and each ridge is annotated with its
+    % positive. Expects the ``rc()`` context.
     """
     rng = np.random.default_rng(seed)
     if ax is None:
@@ -334,7 +337,7 @@ def plot_histograms(
     grouped: dict = {}
     for p in populations:
         grouped.setdefault(key_of(p), []).append(p)
-    order = sorted(grouped, key=lambda v: (v is None, v))
+    order = list(order) if order else sorted(grouped, key=lambda v: (v is None, v))
     n = len(order)
     step = 1.0
     baselines = []

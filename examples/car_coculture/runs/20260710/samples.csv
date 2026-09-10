@@ -1,0 +1,17 @@
+filename,sample,construct,jurkat,et_ratio,target_n
+1-to-0/Phuong-CAR-Jurkat-CoCulture_20260710_AA21-1to0.fcs,AA21_1-0,AA21,CAR,1:0,0
+1-to-0/Phuong-CAR-Jurkat-CoCulture_20260710_AA22-1to0.fcs,AA22_1-0,AA22,CAR,1:0,0
+1-to-0/Phuong-CAR-Jurkat-CoCulture_20260710_AA23-1to0.fcs,AA23_1-0,AA23,CAR,1:0,0
+1-to-0/Phuong-CAR-Jurkat-CoCulture_20260710_WT-1to0.fcs,WT_1-0,WT,untransduced,1:0,0
+1-to-1/Phuong-CAR-Jurkat-CoCulture_20260710_AA21-1to1.fcs,AA21_1-1,AA21,CAR,1:1,1
+1-to-1/Phuong-CAR-Jurkat-CoCulture_20260710_AA22-1to1.fcs,AA22_1-1,AA22,CAR,1:1,1
+1-to-1/Phuong-CAR-Jurkat-CoCulture_20260710_AA23-1to1.fcs,AA23_1-1,AA23,CAR,1:1,1
+1-to-1/Phuong-CAR-Jurkat-CoCulture_20260710_WT-1to1.fcs,WT_1-1,WT,untransduced,1:1,1
+1-to-2/Phuong-CAR-Jurkat-CoCulture_20260710_AA21-1to2.fcs,AA21_1-2,AA21,CAR,1:2,2
+1-to-2/Phuong-CAR-Jurkat-CoCulture_20260710_AA22-1to2.fcs,AA22_1-2,AA22,CAR,1:2,2
+1-to-2/Phuong-CAR-Jurkat-CoCulture_20260710_AA23-1to2.fcs,AA23_1-2,AA23,CAR,1:2,2
+1-to-2/Phuong-CAR-Jurkat-CoCulture_20260710_WT-1to2.fcs,WT_1-2,WT,untransduced,1:2,2
+1-to-4/Phuong-CAR-Jurkat-CoCulture_20260710_AA21-1to4.fcs,AA21_1-4,AA21,CAR,1:4,4
+1-to-4/Phuong-CAR-Jurkat-CoCulture_20260710_AA22-1to4.fcs,AA22_1-4,AA22,CAR,1:4,4
+1-to-4/Phuong-CAR-Jurkat-CoCulture_20260710_AA23-1to4.fcs,AA23_1-4,AA23,CAR,1:4,4
+1-to-4/Phuong-CAR-Jurkat-CoCulture_20260710_WT-1to4.fcs,WT_1-4,WT,untransduced,1:4,4

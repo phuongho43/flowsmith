@@ -1,0 +1,14 @@
+filename,sample,construct,virus_uL
+untransduced.fcs,untransduced,control,0
+AA21-0.5.fcs,AA21_0.5,AA21,0.5
+AA21-1.0.fcs,AA21_1.0,AA21,1.0
+AA21-2.0.fcs,AA21_2.0,AA21,2.0
+AA21-4.0.fcs,AA21_4.0,AA21,4.0
+AA22-0.5.fcs,AA22_0.5,AA22,0.5
+AA22-1.0.fcs,AA22_1.0,AA22,1.0
+AA22-2.0.fcs,AA22_2.0,AA22,2.0
+AA22-4.0.fcs,AA22_4.0,AA22,4.0
+AA23-0.5.fcs,AA23_0.5,AA23,0.5
+AA23-1.0.fcs,AA23_1.0,AA23,1.0
+AA23-2.0.fcs,AA23_2.0,AA23,2.0
+AA23-4.0.fcs,AA23_4.0,AA23,4.0
